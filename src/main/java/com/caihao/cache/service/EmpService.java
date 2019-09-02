@@ -3,6 +3,7 @@ package com.caihao.cache.service;
 import com.caihao.cache.bean.Employee;
 import com.caihao.cache.mapper.EmpMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +16,8 @@ public class EmpService {
     @Autowired
     private EmpMapper empMapper;
 
+
+    @Cacheable(cacheNames = "emp")
     public Employee getemp(Integer id){
         System.err.println("查询==="+id+"号员工");
 
