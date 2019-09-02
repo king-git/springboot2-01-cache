@@ -24,4 +24,5 @@ public interface EmpMapper {
     public void addemp(Employee employee);
 
 
+
 }
