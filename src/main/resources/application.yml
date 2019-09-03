@@ -8,6 +8,9 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+#  redis缓存数据的主机地址
+  redis:
+    host: 198.10.1.121
 #开启驼峰命名规则
 mybatis:
   configuration:
@@ -18,4 +21,4 @@ logging:
   level:
     com.caihao.cache.mapper: debug
 #开启调试模式，显示自动配置报告
-debug: true
+#debug: true
