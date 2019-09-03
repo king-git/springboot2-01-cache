@@ -8,7 +8,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-#  redis缓存数据的主机地址
+#  演示-1的redis缓存数据的主机地址
   redis:
     host: 198.10.1.121
 #开启驼峰命名规则
