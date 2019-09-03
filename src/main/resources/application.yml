@@ -2,9 +2,9 @@
 spring:
   datasource:
     #演示-1的数据源
-    #url: jdbc:mysql://198.10.1.121:3306/spring_cache
+    url: jdbc:mysql://198.10.1.121:3306/spring_cache
     #演示-2的数据源
-    url: jdbc:mysql://192.168.0.108:3306/spring_cache
+#    url: jdbc:mysql://192.168.0.108:3306/spring_cache
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver

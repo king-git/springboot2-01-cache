@@ -24,4 +24,31 @@ public class EmpController {
         return employee;
     }
 
+
+    @GetMapping("/emp")
+    public Employee updemp(Employee employee){
+
+        Employee emp = empService.updemp(employee);
+        return emp;
+    }
+
+
+    @GetMapping("/delemp/{id}")
+    public String delemp(@PathVariable("id") Integer id){
+
+        empService.delemp(id);
+        return "success";
+    }
+
+
+    @GetMapping("/emp/lastName/{lastName}")
+    public Employee getempBylastname(@PathVariable("lastName") String lastName){
+
+        System.err.println("按照名字查询======="+lastName);
+         
+        Employee employee = empService.getempBylastName(lastName);
+        return employee;
+    }
+
+
 }

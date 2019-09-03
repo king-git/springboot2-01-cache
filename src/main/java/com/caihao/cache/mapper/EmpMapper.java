@@ -24,5 +24,6 @@ public interface EmpMapper {
     public void addemp(Employee employee);
 
 
-
+    @Select("select * from employee where lastName=#{lastName}")
+    public Employee getEmpByLastName(String lastName);
 }
